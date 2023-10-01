@@ -12,9 +12,10 @@ struct ContentView: View {
     
     @Environment(\.modelContext) var modelContext
     @Query var destinations: [Destination]
+    @State private var path = [Destination]()
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             List {
                 ForEach(destinations) { destination in
                     NavigationLink(value: destination) {
@@ -31,6 +32,7 @@ struct ContentView: View {
             .navigationDestination(for: Destination.self, destination: EditDestinationView.init)
             .toolbar{
                 Button("Add Samples", action: addSamples)
+                Button("Add Detsination", systemImage: "plus", action: addDestination)
             }
         }
     }
@@ -42,6 +44,12 @@ struct ContentView: View {
         modelContext.insert(rome)
         modelContext.insert(florence)
         modelContext.insert(naples)
+    }
+    
+    func addDestination() {
+        let destination = Destination() // new empty destination
+        modelContext.insert(destination) // insert the empty destination
+        path = [destination] // show this with the navigation
     }
     
     func deleteDestinations(_ indexSet: IndexSet) {
