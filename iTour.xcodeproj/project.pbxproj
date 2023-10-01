@@ -78,7 +78,6 @@
 		2ABE84732AC917EC0008C3B4 = {
 			isa = PBXGroup;
 			children = (
-				2ABE84AB2AC922300008C3B4 /* EditDestinationView.swift */,
 				2ABE847E2AC917EC0008C3B4 /* iTour */,
 				2ABE848F2AC917EE0008C3B4 /* iTourTests */,
 				2ABE84992AC917EE0008C3B4 /* iTourUITests */,
@@ -99,6 +98,7 @@
 		2ABE847E2AC917EC0008C3B4 /* iTour */ = {
 			isa = PBXGroup;
 			children = (
+				2ABE84AB2AC922300008C3B4 /* EditDestinationView.swift */,
 				2ABE847F2AC917EC0008C3B4 /* iTourApp.swift */,
 				2ABE84812AC917EC0008C3B4 /* ContentView.swift */,
 				2ABE84A92AC9182F0008C3B4 /* Destination.swift */,

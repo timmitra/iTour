@@ -13,7 +13,22 @@ struct EditDestinationView: View {
     @Bindable var destination: Destination
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            TextField("Name", text: $destination.name)
+            TextField("Details", text: $destination.details)
+            DatePicker("Date", selection: $destination.date)
+            
+            Section("Priority") {
+                Picker("Priority", selection: $destination.priority) {
+                    Text("Meh").tag(1)
+                    Text("Maybe").tag(2)
+                    Text("Must").tag(3)
+                }
+                .pickerStyle(.segmented)
+            }
+            .navigationTitle("Edit Destination")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
