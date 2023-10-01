@@ -15,6 +15,7 @@
 		2ABE849B2AC917EE0008C3B4 /* iTourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE849A2AC917EE0008C3B4 /* iTourUITests.swift */; };
 		2ABE849D2AC917EE0008C3B4 /* iTourUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE849C2AC917EE0008C3B4 /* iTourUITestsLaunchTests.swift */; };
 		2ABE84AA2AC9182F0008C3B4 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE84A92AC9182F0008C3B4 /* Destination.swift */; };
+		2ABE84AC2AC922300008C3B4 /* EditDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE84AB2AC922300008C3B4 /* EditDestinationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		2ABE849A2AC917EE0008C3B4 /* iTourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTourUITests.swift; sourceTree = "<group>"; };
 		2ABE849C2AC917EE0008C3B4 /* iTourUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTourUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2ABE84A92AC9182F0008C3B4 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		2ABE84AB2AC922300008C3B4 /* EditDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDestinationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		2ABE84732AC917EC0008C3B4 = {
 			isa = PBXGroup;
 			children = (
+				2ABE84AB2AC922300008C3B4 /* EditDestinationView.swift */,
 				2ABE847E2AC917EC0008C3B4 /* iTour */,
 				2ABE848F2AC917EE0008C3B4 /* iTourTests */,
 				2ABE84992AC917EE0008C3B4 /* iTourUITests */,
@@ -263,6 +266,7 @@
 				2ABE84822AC917EC0008C3B4 /* ContentView.swift in Sources */,
 				2ABE84802AC917EC0008C3B4 /* iTourApp.swift in Sources */,
 				2ABE84AA2AC9182F0008C3B4 /* Destination.swift in Sources */,
+				2ABE84AC2AC922300008C3B4 /* EditDestinationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
