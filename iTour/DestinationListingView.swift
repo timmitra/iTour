@@ -28,6 +28,11 @@ struct DestinationListingView: View {
         }
     }
     
+    init(sort: SortDescriptor<Destination>) {
+        // _destination is the query object (not the destination)
+        _destinations = Query(sort: [sort])
+    }
+    
     func deleteDestinations(_ indexSet: IndexSet) {
         for index in indexSet {
             let destination = destinations[index]
@@ -38,5 +43,5 @@ struct DestinationListingView: View {
 }
 
 #Preview {
-    DestinationListingView()
+    DestinationListingView(sort: SortDescriptor(\Destination.name))
 }
