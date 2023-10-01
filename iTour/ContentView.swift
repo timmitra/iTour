@@ -31,11 +31,13 @@ struct ContentView: View {
             .navigationTitle("iTour")
             .navigationDestination(for: Destination.self, destination: EditDestinationView.init)
             .toolbar{
-                Button("Add Samples", action: addSamples)
                 Button("Add Detsination", systemImage: "plus", action: addDestination)
             }
         }
     }
+     
+    /* when we started we could a sample data */
+    /* Button("Add Samples", action: addSamples) // in toolbar */
     func addSamples() {
         let rome = Destination(name: "Rome")
         let florence = Destination(name: "Florence")
