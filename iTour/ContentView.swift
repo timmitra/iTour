@@ -12,6 +12,7 @@ struct ContentView: View {
     
     @Environment(\.modelContext) var modelContext
     @State private var path = [Destination]()
+    @State private var sortOrder = SortDescriptor(\Destination.name)
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -20,6 +21,17 @@ struct ContentView: View {
             .navigationDestination(for: Destination.self, destination: EditDestinationView.init)
             .toolbar{
                 Button("Add Detsination", systemImage: "plus", action: addDestination)
+                Menu("Sort", systemImage: "arrow.up.arrow.down") {
+                    Picker("Sort", selection: $sortOrder) {
+                        Text("Name")
+                            .tag(SortDescriptor(\Destination.name))
+                        Text("Priority")
+                            .tag(SortDescriptor(\Destination.priority, order: .reverse))
+                        Text("Date")
+                            .tag(SortDescriptor(\Destination.date))
+                    }
+                    .pickerStyle(.inline) // with no title
+                }
             }
         }
     }
