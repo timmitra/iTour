@@ -15,7 +15,7 @@ class Destination {
     var details: String
     var date: Date
     var priority: Int
-    var sites = [Site]() // empty Site array
+    @Relationship(deleteRule: .cascade) var sites = [Site]() // empty Site array
     
     init(name: String = "", details: String = "", date: Date = .now, priority: Int = 2) {
         self.name = name
