@@ -14,6 +14,7 @@
 		2ABE84912AC917EE0008C3B4 /* iTourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE84902AC917EE0008C3B4 /* iTourTests.swift */; };
 		2ABE849B2AC917EE0008C3B4 /* iTourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE849A2AC917EE0008C3B4 /* iTourUITests.swift */; };
 		2ABE849D2AC917EE0008C3B4 /* iTourUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE849C2AC917EE0008C3B4 /* iTourUITestsLaunchTests.swift */; };
+		2ABE84AA2AC9182F0008C3B4 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE84A92AC9182F0008C3B4 /* Destination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2ABE84962AC917EE0008C3B4 /* iTourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ABE849A2AC917EE0008C3B4 /* iTourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTourUITests.swift; sourceTree = "<group>"; };
 		2ABE849C2AC917EE0008C3B4 /* iTourUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTourUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2ABE84A92AC9182F0008C3B4 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				2ABE847F2AC917EC0008C3B4 /* iTourApp.swift */,
 				2ABE84812AC917EC0008C3B4 /* ContentView.swift */,
+				2ABE84A92AC9182F0008C3B4 /* Destination.swift */,
 				2ABE84832AC917EE0008C3B4 /* Assets.xcassets */,
 				2ABE84852AC917EE0008C3B4 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				2ABE84822AC917EC0008C3B4 /* ContentView.swift in Sources */,
 				2ABE84802AC917EC0008C3B4 /* iTourApp.swift in Sources */,
+				2ABE84AA2AC9182F0008C3B4 /* Destination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
